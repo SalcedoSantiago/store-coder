@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Big+Shoulders+Stencil+Display:wght@100;300;400;500;600&family=Yellowtail&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Home Store</title>
+    <title>zapatilla</title>
     <meta name="description" content="Este es mi sitio de ventas de zapatillas">
     <meta name="keywords"  content="ZAPATILLAS, COMPRAS, VENTAS, ADIDAS, NIKE, PUMA, DC">
 </head>
@@ -33,9 +31,9 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" href="./index.html">Home</a>
+                            <a class="nav-link" href="./index.html">Home</a>
                             <a class="nav-link" href="./about.html">About</a>
-                            <a class="nav-link" href="./store.html">Store</a>
+                            <a class="nav-link active" href="./store.html">Store</a>
                             <a class="nav-link" href="./contacto.html">Contact</a>
                         </div>
                     </div>
@@ -45,19 +43,38 @@
     </header>
     <main>
 
-        <div class="contenedor__section--info">
-            <div class="section--info">
-                <div class="info--desc">
-                    <p class="info__desc--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum porro
-                        placeat cupiditate labore
-                        aspernatur similique reprehenderit, aut expedita maxime dolores. Alias exercitationem molestiae
+        <section class="container zapatilla">
+
+
+            <div class="zapatilla__container">
+                <div class="zapatilla__container--imagen">
+                    <img src="./img/Zapatillas_Courtmaster_Negro_FY8141_01_standard.jpg" alt="">
+                </div>
+
+                <div class="zapatilla__container--desc">
+                    <h3 class="zapatilla__title">Courtmaster</h3>
+                    <p class="zapatilla__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas neque
+                        aliquam impedit, harum
+                        delectus laboriosam molestias rem animi et nam dolor tempora maxime odio beatae. Ratione quia
+                        fugiat dolore nostrum.
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas neque aliquam impedit, harum
+                        delectus laboriosam molestias rem animi et nam dolor tempora maxime odio beatae. Ratione quia
+                        fugiat dolore nostrum.
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas neque aliquam impedit, harum
+                        delectus laboriosam molestias rem animi et nam dolor tempora maxime odio beatae. Ratione quia
+                        fugiat dolore nostrum.
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas neque aliquam impedit, harum
+                        delectus laboriosam molestias rem animi et nam dolor tempora maxime odio beatae. Ratione quia
+                        fugiat dolore nostrum.
                     </p>
+                    <button class="zapatilla__comprar">comprar</button>
                 </div>
-                <div class="info-actions">
-                    <button class="info__action-button"><a href="./store.html">Tienda</a></button>
-                </div>
+
+
             </div>
-        </div>
+
+        </section>
+
 
         <section class="container novedades__container">
             <h2 class="novedades__container--title">NOVEDADES</h2>
@@ -271,173 +288,7 @@
 
         </section>
 
-        <section class="genero">
-            <div class="container">
-                <h2 class="genero--title">para quien compras?</h2>
-                <div class="genero__container">
-                    <div class="genero__grid">
-                        <div class="genero__grid--imagen hombres">
-                            <!--  <img class="item__cotainer--imagen" src="./img/hombres.jpg" alt="CourMaster Negro"> -->
-                        </div>
-                        <a href="./hombres.html">
-                            <h3 class="genero__grid--title">Hombres</h3>
-                        </a>
-                    </div>
-                    <div class="genero__grid">
-                        <div class="genero__grid--imagen mujeres">
-                            <!--  <img class="item__cotainer--imagen" src="./img/hombres.jpg" alt="CourMaster Negro"> -->
-                        </div>
-                        <a href="./mujeres.html">
-                            <h3 class="genero__grid--title">Mujeres</h3>
-                        </a>
-                    </div>
-                    <div class="genero__grid">
-                        <div class="genero__grid--imagen ninos">
-                            <!--  <img class="item__cotainer--imagen" src="./img/hombres.jpg" alt="CourMaster Negro"> -->
-                        </div>
-
-                        <a href="./ninos.html">
-                            <h3 class="genero__grid--title">Ninos</h3>
-                        </a>
-                    </div>
-                    <div class="genero__grid">
-                        <div class="genero__grid--imagen unisex">
-                            <!--  <img class="item__cotainer--imagen" src="./img/hombres.jpg" alt="CourMaster Negro"> -->
-                        </div>
-                        <a href="./store.html">
-                            <h3 class="genero__grid--title">Unisex</h3>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="top__picks container">
-            <div class="top__picks--header">
-                <h2>Destacado</h2>
-                <button class="top__picks--actions"> <a href="./store.html">ver todas</a></button>
-            </div>
-
-            <div class="shop__container">
-                <div class="shop__container--row">
-                    <div class="item__cotainer">
-                        <a href="./zapatilla.html">
-                            <img class="item__cotainer--imagen"
-                                src="./img/Zapatillas_Courtmaster_Negro_FY8141_01_standard.jpg" alt="CourMaster Negro">
-                            <div class="item__cotainer--heading">
-                                <div class="item--title">PATRIOT - BLACK/WHITE</div>
-                                <div class="item--price">$11.900 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item__cotainer">
-                        <a href="./zapatilla.html">
-                            <img class="item__cotainer--imagen"
-                                src="./img/Zapatillas_Courtmaster_Negro_FY8141_01_standard.jpg" alt="CourMaster Negro">
-                            <div class="item__cotainer--heading">
-                                <div class="item--title">PATRIOT - BLACK/WHITE</div>
-                                <div class="item--price">$11.900 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item__cotainer">
-                        <a href="./zapatilla.html">
-                            <img class="item__cotainer--imagen"
-                                src="./img/Zapatillas_Courtmaster_Negro_FY8141_01_standard.jpg" alt="CourMaster Negro">
-                            <div class="item__cotainer--heading">
-                                <div class="item--title">PATRIOT - BLACK/WHITE</div>
-                                <div class="item--price">$11.900 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item__cotainer">
-                        <a href="./zapatilla.html">
-                            <img class="item__cotainer--imagen"
-                                src="./img/Zapatillas_Courtmaster_Negro_FY8141_01_standard.jpg" alt="CourMaster Negro">
-                            <div class="item__cotainer--heading">
-                                <div class="item--title">PATRIOT - BLACK/WHITE</div>
-                                <div class="item--price">$11.900 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item__cotainer">
-                        <a href="./zapatilla.html">
-                            <img class="item__cotainer--imagen"
-                                src="./img/Zapatillas_Courtmaster_Negro_FY8141_01_standard.jpg" alt="CourMaster Negro">
-                            <div class="item__cotainer--heading">
-                                <div class="item--title">PATRIOT - BLACK/WHITE</div>
-                                <div class="item--price">$11.900 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item__cotainer">
-                        <a href="./zapatilla.html">
-                            <img class="item__cotainer--imagen"
-                                src="./img/Zapatillas_Courtmaster_Negro_FY8141_01_standard.jpg" alt="CourMaster Negro">
-                            <div class="item__cotainer--heading">
-                                <div class="item--title">PATRIOT - BLACK/WHITE</div>
-                                <div class="item--price">$11.900 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item__cotainer">
-                        <a href="./zapatilla.html">
-                            <img class="item__cotainer--imagen"
-                                src="./img/Zapatillas_Courtmaster_Negro_FY8141_01_standard.jpg" alt="CourMaster Negro">
-                            <div class="item__cotainer--heading">
-                                <div class="item--title">PATRIOT - BLACK/WHITE</div>
-                                <div class="item--price">$11.900 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item__cotainer">
-                        <a href="./zapatilla.html">
-                            <img class="item__cotainer--imagen"
-                                src="./img/Zapatillas_Courtmaster_Negro_FY8141_01_standard.jpg" alt="CourMaster Negro">
-                            <div class="item__cotainer--heading">
-                                <div class="item--title">PATRIOT - BLACK/WHITE</div>
-                                <div class="item--price">$11.900 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item__cotainer">
-                        <a href="./zapatilla.html">
-                            <img class="item__cotainer--imagen"
-                                src="./img/Zapatillas_Courtmaster_Negro_FY8141_01_standard.jpg" alt="CourMaster Negro">
-                            <div class="item__cotainer--heading">
-                                <div class="item--title">PATRIOT - BLACK/WHITE</div>
-                                <div class="item--price">$11.900 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item__cotainer">
-                        <a href="./zapatilla.html">
-                            <img class="item__cotainer--imagen"
-                                src="./img/Zapatillas_Courtmaster_Negro_FY8141_01_standard.jpg" alt="CourMaster Negro">
-                            <div class="item__cotainer--heading">
-                                <div class="item--title">PATRIOT - BLACK/WHITE</div>
-                                <div class="item--price">$11.900 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item__cotainer">
-                        <a href="./zapatilla.html">
-                            <img class="item__cotainer--imagen"
-                                src="./img/Zapatillas_Courtmaster_Negro_FY8141_01_standard.jpg" alt="CourMaster Negro">
-                            <div class="item__cotainer--heading">
-                                <div class="item--title">PATRIOT - BLACK/WHITE</div>
-                                <div class="item--price">$11.900 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
     </main>
-
     <footer class="footer">
         <div class="footer--contenedor">
             <div class="contenedor__footer--description">
@@ -452,18 +303,17 @@
                 </div>
             </div>
             <div class="footer--buttons__normal">
-                <a class="button--action button--action__active" href="./index.html">Home</a>
+                <a class="button--action" href="./index.html">Home</a>
                 <a class="button--action" href="./about.html">About</a>
                 <a class="button--action" href="./contacto.html">Contact</a>
-                <a class="button--action" href="./store.html">Store</a>
+                <a class="button--action button--action__active" href="./store.html">Store</a>
             </div>
             </section>
         </div>
     </footer>
 
-
-
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>

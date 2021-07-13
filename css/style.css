@@ -1,0 +1,639 @@
+html {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: white;
+  font-family: "Bebas Neue", cursive;
+  margin: 0;
+}
+
+a {
+  color: #1aa7ba;
+}
+
+h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+}
+
+header {
+  background-color: #124962;
+  border-bottom: 5px solid #ddc599;
+}
+header .header {
+  display: block;
+  padding: 40px 0;
+}
+@media (min-width: 992px) {
+  header .header {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+}
+header .header__heading {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  header .header__heading {
+    justify-content: start;
+    width: 35%;
+  }
+}
+header .header__heading--title {
+  font-size: 70px;
+  font-family: "Yellowtail", cursive;
+  text-align: center;
+  color: #ddc599;
+  text-transform: uppercase;
+}
+header .header__navbar .container-fluid {
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  header .header__navbar .navbar-collapse {
+    justify-content: center;
+  }
+}
+header .header__navbar .container-fluid {
+  display: flex;
+  justify-content: center;
+}
+header .header__navbar a {
+  float: left;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+main {
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  /*  section {
+         padding: 20px 0;
+         max-width: 80%;
+         margin: 0 auto;
+     }
+  */
+}
+main .contenedor__section--info {
+  margin: 0 auto;
+  height: 870px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  padding: 20px;
+}
+main .contenedor__section--info::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+main .contenedor__section--info .section--info {
+  z-index: 1;
+}
+main .contenedor__section--info .section--info .info--desc {
+  margin: 0 auto;
+  width: 70%;
+}
+main .contenedor__section--info .section--info .info--desc .info__desc--text {
+  color: #20dad9;
+  text-align: center;
+}
+main .contenedor__section--info .section--info .info-actions {
+  text-align: center;
+}
+main .contenedor__section--info .section--info .info-actions .info__action-button {
+  padding: 5px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: #20dad9;
+  border-radius: 5px;
+  border: none;
+}
+main .contenedor__section--info .section--info .info-actions .info__action-button a {
+  text-decoration: none;
+  color: white;
+}
+main .contenedor__section--info .section--info .info-actions .info__action-button:hover {
+  cursor: pointer;
+  background-color: #14718d;
+}
+main .novedades__container {
+  margin-top: 70px;
+}
+main .novedades__container--carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .novedades__container .carousel-control-next-icon,
+main .novedades__container .carousel-control-prev-icon {
+  background-color: #124962;
+}
+main .shop__container--row {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+main .shop__container--row .item__cotainer {
+  width: calc(50%);
+  padding: 5px;
+  overflow: hidden;
+}
+main .shop__container--row .item__cotainer a {
+  color: #122a42;
+  text-decoration: none;
+}
+main .shop__container--row .item__cotainer a:hover {
+  color: #1aa7ba;
+}
+main .shop__container--row .item__cotainer--imagen {
+  width: 100%;
+}
+main .shop__container--row .item__cotainer--heading {
+  padding: 30px 5px;
+  position: relative;
+}
+main .shop__container--row .item__cotainer--heading .item--title {
+  font-family: "Anton", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+main .shop__container--row .item__cotainer--heading .item--price {
+  font-family: "Bebas Neue", cursive;
+}
+main .shop__container--row .item__cotainer:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+@media (min-width: 900px) {
+  main .shop__container--row .item__cotainer {
+    width: calc(33.3%);
+  }
+}
+@media (min-width: 1024px) {
+  main .shop__container--row .item__cotainer {
+    width: calc(25%);
+  }
+}
+@media (min-width: 1240px) {
+  main .shop__container--row .item__cotainer {
+    width: calc(20%);
+  }
+}
+main .genero {
+  width: 100%;
+  background-color: #124962;
+  padding: 50px 0;
+  border-top: 5px;
+  border-bottom: 5px;
+  border-right: 0;
+  border-left: 0;
+  border-style: solid;
+  border-color: #ddc599;
+}
+main .genero--title {
+  margin: 20px 0 10px 0;
+  color: #ddc599;
+}
+main .genero__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .genero__container .genero__grid {
+  height: 300px;
+  background-color: #124962;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+main .genero__container .genero__grid--imagen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/hombres.jpg);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+main .genero__container .genero__grid--imagen.hombres::before {
+  background-image: url(../img/hombres.jpg);
+}
+main .genero__container .genero__grid--imagen.mujeres::before {
+  background-image: url(../img/mujer.jpg);
+}
+main .genero__container .genero__grid--imagen.ninos::before {
+  background-image: url(../img/ninos.jpg);
+}
+main .genero__container .genero__grid--imagen.general::before {
+  background-image: url(../img/ninos.jpg);
+}
+main .genero__container .genero__grid a {
+  text-decoration: none;
+  z-index: 3;
+}
+main .genero__container .genero__grid a:hover {
+  color: #20dad9;
+}
+main .genero__container .genero__grid--title {
+  color: #20dad9;
+  z-index: 3;
+  font-family: "Yellowtail", cursive;
+  font-size: 40px;
+}
+main .genero__container .genero__grid:hover {
+  cursor: pointer;
+}
+main .genero__container .genero__grid:hover .genero__grid--imagen::before {
+  opacity: 1;
+}
+@media (min-width: 800px) {
+  main .genero__container .genero__grid {
+    width: calc(50% - 0.5rem);
+  }
+}
+@media (min-width: 1024px) {
+  main .genero__container .genero__grid {
+    width: calc(25% - 0.5rem);
+  }
+}
+main .top__picks {
+  margin-top: 50px;
+}
+main .top__picks--header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0;
+  padding-bottom: 40px;
+}
+main .top__picks--heading {
+  margin: 0;
+  color: #14718d;
+}
+main .top__picks--actions {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #ebeeef;
+  font-size: 15px;
+}
+main .top__picks--actions a {
+  text-decoration: none;
+  color: black;
+}
+main .about__header {
+  height: 550px;
+}
+main .about__header--title {
+  text-align: center;
+  color: #ddc599;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: "Yellowtail", cursive;
+  font-size: 60px;
+}
+main .about__header--background {
+  background-color: #14718d;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+main .about__header--background__image {
+  width: 70%;
+  margin: 0 auto;
+  height: 400px;
+  position: relative;
+  box-shadow: 1px 0px 64px -4px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 1px 0px 64px -4px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 1px 0px 64px -4px rgba(0, 0, 0, 0.41);
+}
+main .about__header--background__image::before {
+  position: absolute;
+  content: "";
+  background-image: url("/img/about.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+main .about__main {
+  width: 70%;
+  margin: 0 auto 50px auto;
+}
+main .about__main--desc {
+  font-size: 20px;
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 80px;
+  text-align: center;
+  font-weight: 300;
+  display: block;
+  padding: 10px;
+}
+main .store__container .store--title {
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Anton", sans-serif;
+}
+main .store__container .store--title.hombres {
+  font-family: "Anton", sans-serif;
+}
+main .store__container .store--title.mujeres {
+  font-family: "Bebas Neue", cursive;
+}
+main .store__container .store--title.ninos {
+  font-family: "Big Shoulders Stencil Display", cursive;
+}
+main .store__container .store--title.general {
+  font-family: "Yellowtail", cursive;
+}
+main .store__container .store {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .store__container .store__sidebar {
+  width: 100%;
+  padding-top: 5px;
+}
+main .store__container .store__sidebar .sidebar__generos {
+  display: flex;
+  justify-content: center;
+}
+main .store__container .store__sidebar .sidebar__generos a {
+  width: calc(15% - 1rem);
+  display: inline-block;
+  text-align: center;
+  padding: 15px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+main .store__container .store__sidebar .sidebar__generos a.active {
+  background-color: #1aa7ba;
+  color: white;
+}
+main .store__container .store__sidebar .sidebar__generos a:hover {
+  background-color: #14718d;
+  color: white;
+}
+@media (min-width: 1024px) {
+  main .store__container .store__sidebar {
+    width: 15%;
+  }
+  main .store__container .store__sidebar .sidebar__generos {
+    width: 100%;
+    border: 1px solid #ccc;
+    display: inline-block;
+  }
+  main .store__container .store__sidebar .sidebar__generos a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 0;
+    font-family: "Bebas Neue", cursive;
+    border-bottom: 1px solid #ccc;
+  }
+}
+main .store__container .store__items {
+  width: 90%;
+  padding-left: 20px;
+}
+@media (min-width: 1024px) {
+  main .store__container .store__items {
+    width: 85%;
+  }
+}
+main .zapatilla__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .zapatilla__container > div {
+  width: 100%;
+}
+main .zapatilla__container--imagen img {
+  width: 100%;
+}
+main .zapatilla__container--desc {
+  padding: 20px;
+}
+main .zapatilla__container--desc .zapatilla__title {
+  font-size: 60px;
+  font-family: "Yellowtail", cursive;
+  text-align: center;
+}
+main .zapatilla__container--desc .zapatilla__text {
+  font-family: "Bebas Neue", cursive;
+  font-size: 18px;
+}
+main .zapatilla__container--desc .zapatilla__comprar {
+  border: none;
+  padding: 15px 30px;
+  background-color: #14718d;
+  font-size: 20px;
+  width: 100%;
+  color: #ddc599;
+}
+main .zapatilla__container--desc .zapatilla__comprar:hover {
+  background-color: #1aa7ba;
+  color: #124962;
+}
+@media (min-width: 900px) {
+  main .zapatilla__container--desc .zapatilla__comprar {
+    width: calc(50% - 1rem);
+  }
+}
+@media (min-width: 900px) {
+  main .zapatilla__container > div {
+    width: calc(50% - 1rem);
+  }
+}
+
+.form {
+  height: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+@media (min-width: 900px) {
+  .form {
+    max-width: 60%;
+  }
+}
+.form .form__title {
+  margin-top: 30px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.form .form__field {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.form .form__field--name, .form .form__field--email, .form .form__field--select, .form .form__field--checkbox {
+  width: calc(50% - 1rem);
+}
+.form .form__field--password, .form .form__field--textarea {
+  width: 100%;
+}
+.form .form__field--actions {
+  width: 40%;
+  margin: 0 auto;
+}
+.form .form__field > div label {
+  padding: 0 5px;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.form .form__field > div input {
+  padding: 20px;
+  height: 40px;
+  width: 100%;
+  border-style: none;
+  background-color: #ccc;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 300;
+  border-color: #1aa7ba;
+}
+.form .form__field > div select {
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  background-color: #ccc;
+  color: #124962;
+  font-size: 16px;
+  border-style: none;
+  border-radius: 2px;
+  font-weight: 300;
+}
+.form .form__field > div textarea {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  background-color: #ccc;
+  border-style: none;
+  border-radius: 2px;
+  resize: none;
+}
+.form .form__field .form__field--checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form .form__field .form__field--checkbox label {
+  width: auto;
+}
+.form .form__field .form__field--checkbox input {
+  width: 30px;
+}
+.form .form__field.actions {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.form .form__field.actions button {
+  border-style: none;
+  padding: 10px 40px;
+  margin: 2px;
+  color: white;
+}
+.form .form__field.actions button[type*=reset] {
+  background-color: #124962;
+}
+.form .form__field.actions button[type*=reset]:hover {
+  background-color: #122a42;
+}
+.form .form__field.actions button[type*=submit] {
+  background-color: #14718d;
+}
+.form .form__field.actions button[type*=submit]:hover {
+  background-color: #1aa7ba;
+}
+
+.footer {
+  background-color: #124962;
+  padding: 30px 0;
+  font-family: "Yellowtail", cursive;
+  border-top: 5px solid #ddc599;
+}
+.footer--contenedor {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.footer--contenedor > div {
+  width: calc(50% - 1rem);
+}
+.footer--contenedor .contenedor__footer--description .footer--title {
+  text-align: center;
+  color: #ddc599;
+}
+.footer--contenedor .contenedor__footer--description .footer--title .footer__title--uppercase {
+  text-transform: uppercase;
+}
+.footer--contenedor .contenedor__footer--description .footer-description {
+  color: #20dad9;
+  font-weight: 100;
+  font-family: "Yellowtail", cursive;
+}
+.footer--contenedor .contenedor__footer--description .footer-description p {
+  font-family: "Bebas Neue", cursive;
+}
+.footer--contenedor .footer--buttons__normal {
+  text-align: center;
+  padding: 30px;
+}
+.footer--contenedor .footer--buttons__normal .button--action {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.footer--contenedor .footer--buttons__normal .button--action__active {
+  color: #20dad9;
+}
+
+/*# sourceMappingURL=style.css.map */

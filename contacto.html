@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Big+Shoulders+Stencil+Display:wght@100;300;400;500;600&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Contanto</title>
+    <meta name="description" content="Este es mi sitio de ventas de zapatillas">
+    <meta name="keywords"  content="ZAPATILLAS, COMPRAS, VENTAS, ADIDAS, NIKE, PUMA, DC">
+</head>
+
+<body>
+    <header>
+        <div class="header container">
+            <div class="header__heading">
+                <h1 class="header__heading--title">Store</h1>
+            </div>
+            <nav class="header__navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="./index.html">Home</a>
+                            <a class="nav-link" href="./about.html">About</a>
+                            <a class="nav-link" href="./store.html">Store</a>
+                            <a class="nav-link active" href="./contacto.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form">
+            <h2 class="form__title">Contactanos</h2>
+            <form>
+                <div class="form__field">
+                    <div class="form__field--name">
+                        <label for="nombre">nombre:</label>
+                        <input type="text" name="nombre" placeholder="Escribe tu nombre aqui" />
+                    </div>
+                    <div class="form__field--email">
+                        <label for="email">email:</label>
+                        <input type="email" name="email" placeholder="zapatillasejemplo.com" />
+                    </div>
+                </div>
+                <div class="form__field">
+                    <div class="form__field--password">
+                        <label for="form__field--label">password:</label>
+                        <input type="form__field--input" placeholder="Escribe tu contrasenia aqui" />
+                    </div>
+                </div>
+                <div class="form__field">
+                    <div class="form__field--select">
+                        <label for="tipo">Tipo:</label>
+                        <select name="tipo">
+                            <option value="deportivas">deportivas</option>
+                            <option value="running">running</option>
+                            <option value="zapatos">zapatos</option>
+                        </select>
+                    </div>
+                    <div class="form__field--checkbox">
+                        <label>nike</label>
+                        <input type="checkbox" id="nike" value="nike" />
+                        <label for="adidas">adidas</label>
+                        <input type="checkbox" id="adidas" value="adidas">
+                        <label for="puma">puma</label>
+                        <input type="checkbox" id="puma" value="puma">
+                    </div>
+                </div>
+                <div class="form__field">
+                    <div class="form__field--textarea">
+                        <textarea name="mensaje" rows="4" cols="15" placeholder="Mensaje"></textarea>
+                    </div>
+                </div>
+
+                <div class="form__field actions">
+                    <button type="reset">reset</button>
+                    <button type="submit">enviar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer--contenedor">
+            <div class="contenedor__footer--description">
+                <div class="footer--title">
+                    <h1 class="footer__title--uppercase">Store</h1>
+                </div>
+                <div class="footer-description">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti vitae, nulla soluta alias
+                        deleniti
+                        quaerat ex molestiae? Qui amet cum explicabo nobis odio praesentium debitis nihil consectetur
+                        dolorem, consequuntur ipsam?</p>
+                </div>
+            </div>
+            <div class="footer--buttons__normal">
+                <a class="button--action" href="./index.html">Home</a>
+                <a class="button--action" href="./about.html">About</a>
+                <a class="button--action button--action__active" href="./contacto.html">Contact</a>
+                <a class="button--action" href="./store.html">Store</a>
+            </div>
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</html>
