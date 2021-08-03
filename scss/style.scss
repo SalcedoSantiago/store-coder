@@ -13,7 +13,6 @@ $color-2: #124962;
 $color-3: #14718d;
 $color-4: #1aa7ba;
 $color-5: #20dad9;
-// $font-bebas: "bebas", sans-serif;
 $font-bebas: "Bebas Neue", cursive;
 $font-yellowtail: "Yellowtail", cursive;
 
@@ -27,9 +26,10 @@ a {
     color: $color-4;
 }
 h2 {
-    font-size: 50px;
+    font-size: 60px;
     text-transform: uppercase;
-    font-family: $font-yellowtail;
+    font-family: $font-bebas;
+    font-weight: 900;
 }
 
 
