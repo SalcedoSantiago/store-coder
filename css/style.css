@@ -22,7 +22,7 @@ a {
 h2 {
   font-size: 50px;
   text-transform: uppercase;
-  font-family: "Anton", sans-serif;
+  font-family: "Yellowtail", cursive;
 }
 
 header {
@@ -117,7 +117,8 @@ main .contenedor__section--info .section--info {
 }
 main .contenedor__section--info .section--info .info--desc {
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
+  font-size: 50px;
 }
 main .contenedor__section--info .section--info .info--desc .info__desc--text {
   color: #20dad9;
@@ -127,10 +128,10 @@ main .contenedor__section--info .section--info .info-actions {
   text-align: center;
 }
 main .contenedor__section--info .section--info .info-actions .info__action-button {
-  padding: 5px 20px;
-  font-size: 15px;
+  padding: 10px 40px;
+  font-size: 20px;
   text-transform: uppercase;
-  background-color: #20dad9;
+  background-color: #14718d;
   border-radius: 5px;
   border: none;
 }
@@ -140,7 +141,7 @@ main .contenedor__section--info .section--info .info-actions .info__action-butto
 }
 main .contenedor__section--info .section--info .info-actions .info__action-button:hover {
   cursor: pointer;
-  background-color: #14718d;
+  background-color: #20dad9;
 }
 main .novedades__container {
   margin-top: 70px;
@@ -179,9 +180,9 @@ main .shop__container--row .item__cotainer--heading {
   position: relative;
 }
 main .shop__container--row .item__cotainer--heading .item--title {
-  font-family: "Anton", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  font-weight: 300;
 }
 main .shop__container--row .item__cotainer--heading .item--price {
   font-family: "Bebas Neue", cursive;
@@ -370,19 +371,7 @@ main .about__main--desc {
 main .store__container .store--title {
   text-align: center;
   padding: 20px 0;
-  font-family: "Anton", sans-serif;
-}
-main .store__container .store--title.hombres {
-  font-family: "Anton", sans-serif;
-}
-main .store__container .store--title.mujeres {
   font-family: "Bebas Neue", cursive;
-}
-main .store__container .store--title.ninos {
-  font-family: "Big Shoulders Stencil Display", cursive;
-}
-main .store__container .store--title.general {
-  font-family: "Yellowtail", cursive;
 }
 main .store__container .store {
   display: flex;
@@ -593,8 +582,8 @@ main .zapatilla__container--desc .zapatilla__comprar:hover {
 
 .footer {
   background-color: #124962;
-  padding: 30px 0;
-  font-family: "Yellowtail", cursive;
+  padding: 20px 0;
+  font-family: "Bebas Neue", cursive;
   border-top: 5px solid #ddc599;
 }
 .footer--contenedor {
@@ -612,7 +601,7 @@ main .zapatilla__container--desc .zapatilla__comprar:hover {
   color: #ddc599;
 }
 .footer--contenedor .contenedor__footer--description .footer--title .footer__title--uppercase {
-  text-transform: uppercase;
+  font-family: "Yellowtail", cursive;
 }
 .footer--contenedor .contenedor__footer--description .footer-description {
   color: #20dad9;
@@ -621,10 +610,11 @@ main .zapatilla__container--desc .zapatilla__comprar:hover {
 }
 .footer--contenedor .contenedor__footer--description .footer-description p {
   font-family: "Bebas Neue", cursive;
+  font-weight: 300;
 }
 .footer--contenedor .footer--buttons__normal {
   text-align: center;
-  padding: 30px;
+  padding: 15px;
 }
 .footer--contenedor .footer--buttons__normal .button--action {
   color: white;

@@ -13,11 +13,9 @@ $color-2: #124962;
 $color-3: #14718d;
 $color-4: #1aa7ba;
 $color-5: #20dad9;
-$font-anton: "Anton", sans-serif;
+// $font-bebas: "bebas", sans-serif;
 $font-bebas: "Bebas Neue", cursive;
-$font-stencil: "Big Shoulders Stencil Display", cursive;
 $font-yellowtail: "Yellowtail", cursive;
-$font-main: "anton";
 
 body {
     background-color: white;
@@ -31,21 +29,9 @@ a {
 h2 {
     font-size: 50px;
     text-transform: uppercase;
-    @if $font-main == "anton" {
-        font-family: $font-anton;
-    } @else if $direction == "stencil" {
-        font-family: $font-stencil;
-    } @else if $direction == "yellowtail" {
-        font-family: $font-yellowtail;
-    }
+    font-family: $font-yellowtail;
 }
 
-$font-families: (
-    "hombres": $font-anton,
-    "mujeres": $font-bebas,
-    "ninos": $font-stencil,
-    "general": $font-yellowtail,
-);
 
 $generos: (
     "hombres": url(../img/hombres.jpg),
@@ -155,7 +141,8 @@ main {
             z-index: 1;
             .info--desc {
                 margin: 0 auto;
-                width: 70%;
+                width: 100%;
+                font-size: 50px;
 
                 .info__desc--text {
                     color: $color-5;
@@ -171,16 +158,16 @@ main {
                         text-decoration: none;
                         color: white;
                     }
-                    padding: 5px 20px;
-                    font-size: 15px;
+                    padding: 10px 40px;
+                    font-size: 20px;
                     text-transform: uppercase;
-                    background-color: $color-5;
+                    background-color: $color-3;
                     border-radius: 5px;
                     border: none;
 
                     &:hover {
                         cursor: pointer;
-                        background-color: $color-3;
+                        background-color: $color-5;
                     }
                 }
             }
@@ -228,9 +215,9 @@ main {
                     position: relative;
 
                     .item--title {
-                        font-family: $font-anton;
-                        font-size: 15px;
-                        font-weight: 400;
+                        font-family: $font-bebas;
+                        font-size: 20px;
+                        font-weight: 300;
                     }
 
                     .item--price {
@@ -451,12 +438,7 @@ main {
         .store--title {
             text-align: center;
             padding: 20px 0;
-            font-family: $font-anton;
-            @each $key, $font in $font-families {
-                &.#{$key} {
-                    font-family: $font;
-                }
-            }
+            font-family: $font-bebas;
         }
 
         .store {
@@ -709,8 +691,8 @@ main {
 ////footer
 .footer {
     background-color: $color-2;
-    padding: 30px 0;
-    font-family: $font-yellowtail;
+    padding: 20px 0;
+    font-family: $font-bebas;
     border-top: 5px solid $color-1;
 
     &--contenedor {
@@ -730,7 +712,7 @@ main {
                 color: $color-1;
 
                 .footer__title--uppercase {
-                    text-transform: uppercase;
+                    font-family: $font-yellowtail;
                 }
             }
 
@@ -741,13 +723,14 @@ main {
 
                 p {
                     font-family: $font-bebas;
+                    font-weight: 300;
                 }
             }
         }
 
         .footer--buttons__normal {
             text-align: center;
-            padding: 30px;
+            padding: 15px;
             .button--action {
                 color: white;
                 padding: 10px 20px;
